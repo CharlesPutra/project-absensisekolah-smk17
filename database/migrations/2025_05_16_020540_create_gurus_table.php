@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->integer('no_guru');
             $table->string('nama_guru');
-            $table->enum('jenis_kelamin', ['Laki_Laki', 'Permpuan']);
+            $table->enum('jenis_kelamin', ['Laki-Laki', 'Perempuan']);
             $table->enum('karyawan', ['Karyawan', 'Guru']);
             $table->unsignedBigInteger('id_jadwalkaryawan')->nullable();
             $table->unsignedBigInteger('id_jurusan')->nullable();
